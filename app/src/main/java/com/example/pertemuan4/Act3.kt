@@ -66,7 +66,28 @@ fun ActivityLessPerson(modifier: Modifier = Modifier) {
                 colors = CardDefaults.cardColors(
                     containerColor = Color.DarkGray
                 )
+
             ) {
+                Row(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(16.dp),
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+
+                    // Logo UMY
+                    Image(
+                        painter = painterResource(
+                            id = R.drawable.logo_umy
+                        ),
+                        contentDescription = stringResource(
+                            R.string.Universitas
+                        ),
+                        modifier = Modifier
+                            .size(80.dp)
+                            .padding(5.dp)
+                    )
+                }
 
             }
 
