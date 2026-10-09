@@ -1,3 +1,4 @@
+
 package com.example.pertemuan4
 
 import androidx.compose.foundation.Image
@@ -66,8 +67,8 @@ fun ActivityLessPerson(modifier: Modifier = Modifier) {
                 colors = CardDefaults.cardColors(
                     containerColor = Color.DarkGray
                 )
-
             ) {
+
                 Row(
                     modifier = Modifier
                         .fillMaxWidth()
@@ -87,47 +88,54 @@ fun ActivityLessPerson(modifier: Modifier = Modifier) {
                             .size(80.dp)
                             .padding(5.dp)
                     )
-                }
-
-                Spacer(
-                    modifier = Modifier.width(15.dp)
-                )
-
-// Informasi mahasiswa
-                Column {
-                    Text(
-                        text = stringResource(R.string.Nama),
-                        fontSize = 22.sp,
-                        fontFamily = FontFamily.Cursive,
-                        fontWeight = FontWeight.Bold,
-                        color = Color.White
-                    )
 
                     Spacer(
-                        modifier = Modifier.height(8.dp)
+                        modifier = Modifier.width(15.dp)
                     )
 
-                    Text(
-                        text = stringResource(R.string.Alamat),
-                        fontSize = 18.sp,
-                        color = Color.Yellow
-                    )
+                    // Informasi mahasiswa
+                    Column {
 
-                    Spacer(
-                        modifier = Modifier.height(8.dp)
-                    )
+                        Text(
+                            text = stringResource(R.string.Nama),
+                            fontSize = 22.sp,
+                            fontFamily = FontFamily.Cursive,
+                            fontWeight = FontWeight.Bold,
+                            color = Color.White
+                        )
 
-                    Text(
-                        text = stringResource(R.string.prodi),
-                        fontSize = 16.sp,
-                        color = Color.White
-                    )
+                        Spacer(
+                            modifier = Modifier.height(8.dp)
+                        )
+
+                        Text(
+                            text = stringResource(R.string.Alamat),
+                            fontSize = 18.sp,
+                            color = Color.Yellow
+                        )
+
+                        Spacer(
+                            modifier = Modifier.height(8.dp)
+                        )
+
+                        Text(
+                            text = stringResource(R.string.prodi),
+                            fontSize = 16.sp,
+                            color = Color.White
+                        )
+                    }
                 }
-
             }
-
-
-
         }
+
+        // Copyright di bagian bawah layar
+        Text(
+            text = stringResource(R.string.copy),
+            modifier = Modifier
+                .align(Alignment.BottomCenter)
+                .padding(bottom = 50.dp),
+            fontSize = 14.sp,
+            color = Color.Gray
+        )
     }
 }
