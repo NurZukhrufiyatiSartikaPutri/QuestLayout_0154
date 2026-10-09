@@ -33,5 +33,16 @@ fun ActivityLessPerson(modifier: Modifier = Modifier) {
         modifier = modifier.fillMaxSize()
     ) {
 
+        Column(
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(top = 100.dp),
+            horizontalAlignment = Alignment.CenterHorizontally,
+            verticalArrangement = Arrangement.Top
+        ) {
+
+
+
+        }
     }
 }
