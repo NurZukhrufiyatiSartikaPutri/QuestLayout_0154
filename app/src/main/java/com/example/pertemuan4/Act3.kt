@@ -41,6 +41,13 @@ fun ActivityLessPerson(modifier: Modifier = Modifier) {
             verticalArrangement = Arrangement.Top
         ) {
 
+            // Judul program studi
+            Text(
+                text = stringResource(R.string.prodi),
+                fontSize = 35.sp,
+                fontWeight = FontWeight.Bold
+            )
+
 
 
         }
