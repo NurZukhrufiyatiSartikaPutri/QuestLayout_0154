@@ -48,6 +48,16 @@ fun ActivityLessPerson(modifier: Modifier = Modifier) {
                 fontWeight = FontWeight.Bold
             )
 
+            // Nama universitas
+            Text(
+                text = stringResource(R.string.Universitas),
+                fontSize = 22.sp
+            )
+
+            Spacer(
+                modifier = Modifier.height(25.dp)
+            )
+
 
 
         }
