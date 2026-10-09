@@ -89,6 +89,41 @@ fun ActivityLessPerson(modifier: Modifier = Modifier) {
                     )
                 }
 
+                Spacer(
+                    modifier = Modifier.width(15.dp)
+                )
+
+// Informasi mahasiswa
+                Column {
+                    Text(
+                        text = stringResource(R.string.Nama),
+                        fontSize = 22.sp,
+                        fontFamily = FontFamily.Cursive,
+                        fontWeight = FontWeight.Bold,
+                        color = Color.White
+                    )
+
+                    Spacer(
+                        modifier = Modifier.height(8.dp)
+                    )
+
+                    Text(
+                        text = stringResource(R.string.Alamat),
+                        fontSize = 18.sp,
+                        color = Color.Yellow
+                    )
+
+                    Spacer(
+                        modifier = Modifier.height(8.dp)
+                    )
+
+                    Text(
+                        text = stringResource(R.string.prodi),
+                        fontSize = 16.sp,
+                        color = Color.White
+                    )
+                }
+
             }
 
 
