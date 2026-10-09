@@ -58,6 +58,18 @@ fun ActivityLessPerson(modifier: Modifier = Modifier) {
                 modifier = Modifier.height(25.dp)
             )
 
+            // Card biodata mahasiswa
+            Card(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(32.dp),
+                colors = CardDefaults.cardColors(
+                    containerColor = Color.DarkGray
+                )
+            ) {
+
+            }
+
 
 
         }
